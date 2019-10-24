@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <h2>Saisie des taux (Fichier EMT)</h2>
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>Code Produit</th>
+                <th>Libellé Produit</th>
+                <th>Taux</th>
+                <th>Retro</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Zak</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+                <td></td>
+                <td><img src='{{ asset('img/edit.png')}}' onclick='edit()'>
+                    <img src='{{ asset('img/delete.png')}}' onclick='add()'></td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
